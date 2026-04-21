@@ -5,7 +5,7 @@ html, body {
     scroll-behavior: smooth;
 }
 
-/* Give every anchor target enough top clearance for the fixed navbar */
+/* Anchor offset — clears the fixed navbar on all scroll-to operations */
 #home, #me, #experience, #projects, #contact {
     scroll-margin-top: 12vh;
 }
@@ -16,12 +16,12 @@ html, body {
     box-sizing: border-box;
     font-family: "Space Mono", monospace;
 }
-body {
+html, body {
     background-color: #f9f6ee;
 }
 .container {
-    min-height: 100vh;   /* was height: 100vh — fixed height was capping scroll range */
-    width: 100%;
+    min-height: 100vh;
+    width: 78%;
     margin-top: 0px;
     margin-bottom: 0px;
     margin-left: auto;
@@ -48,9 +48,16 @@ body {
 }
 .logo {
     color: black;
-    font-size: 2.2em;
+    font-size: 1.6em;
     justify-content: left;
 }
+.logo a {
+    text-decoration: none;
+}
+.logo :visited {
+    color: black;
+}
+
 .logo span {
     color: #1e6b83;
 }
@@ -65,7 +72,7 @@ nav ul li a {
     color: #1e6b83;
     text-decoration: none;
     font-weight: bold;
-    font-size: 1.4em;
+    font-size: 1em;
     
 }
 nav ul li a:hover {
@@ -84,14 +91,14 @@ nav ul li a:hover {
 
 .hero-container .hero-title {
     color: #1e6b83;
-    font-size: 5.8em;
+    font-size: 4em;
     justify-content: center;
-    margin-bottom: 3vh;
+    margin-bottom: 2vh;
 }
 
 .hero-container .hero-description {
     color: grey;
-    font-size: 1.7em;
+    font-size: 1.3em;
     margin-bottom: 3vh;
 }
 
@@ -151,7 +158,7 @@ nav ul li a:hover {
     display:flex;
     background-color: transparent;
     flex-direction: column;
-    font-size: 26px;
+    font-size: 1.1em;
     font-weight: lighter;
     color: #f9f6ee;
     height: 80%;
@@ -162,13 +169,14 @@ nav ul li a:hover {
 
 .section-title {
     color: #1e6b83;
-    font-size: 2.5em;
+    font-size: 2.2em;
     display: flex;
     justify-content: center;
     margin-top: 10vh;
     margin-bottom: 10vh;
     text-decoration: #1e6b83;
 }
+/* Projects Start*/
 .hero-projects {
     display: flex;
     flex-direction: column;
@@ -190,25 +198,26 @@ nav ul li a:hover {
     border: #1e6b83;
     border-radius: 20px;
 }
+
 .project-title {
     margin-bottom: 2vh;
-    font-size: 1.1em;
+    font-size: 0.7em;
     color:black
 }
 .project-text {
-    font-size: 1.15em;
+    font-size: 0.9em;
     margin-bottom: 2vh;
     color:black
 }
 
 .project-skills {
-    font-size: 1.1em;
+    font-size: 0.8em;
     margin-bottom: 1vh;
     align-self: center;
     color: #1e6b83;
 }
 .project-links {
-    font-size: 1.2em;
+    font-size: 0.9em;
     margin-bottom: 1vh;
     align-self: center;
     color: black;
@@ -218,6 +227,7 @@ nav ul li a:hover {
     text-decoration: none;
     color: black;
 }
+/* Projects End*/
 
 
 .me-card {
@@ -228,9 +238,12 @@ nav ul li a:hover {
     align-items: center;
     height: max-content;
     width: 100%;
-    max-width: 1500px;   /* controls how wide they get */
+    max-width: 1400px;   /* controls how wide they get */
     margin: 5vh auto;
     
+}
+.me-card:nth-child(2) {
+    flex-direction: row-reverse;
 }
 
 .me-text {
@@ -242,7 +255,8 @@ nav ul li a:hover {
     width: 50%;
     height: max-content;
     background-color: transparent;
-    font-size: 28px;
+    font-size: 1.2em;
+    margin: 6vh;
     
 }
 .me-img {
@@ -258,11 +272,12 @@ nav ul li a:hover {
 }
 .me-img img {
     width: 100%;
-    height: 100%;
+    height: 50vh;
     object-fit: cover;   /* fills the box nicely */
     border-radius: 15px;
 }
 
+/*Experience Cards Start*/
 .experience-card {
     border: 8px solid rgb(112, 172, 141);
     background-color: #f9f6ee;
@@ -304,29 +319,31 @@ nav ul li a:hover {
     margin-bottom: 1vh;
 }
 .experience-title img {
-    height: 1.4em;
+    height: 1.6em;
     padding-right: 10px;
     width: auto; 
     vertical-align: middle;
 }
 .experience-title h1 {
     margin: 0; 
+    font-size: 1.6em;
 }
 .experience-company {
     margin-bottom: 3px;
-    font-size: 1.3em;
+    font-size: 1em;
 }
 .experience-date {
     margin-bottom: 1vh;
-    font-size: 1.1em;
+    font-size: 0.8em;
 }
 .experience-text {
     margin-bottom: 1vh;
-    font-size: 1.2em;
+    font-size: 0.95em;
 }
 .experience-technologies {
-    font-size: 1.1em;
+    font-size: 0.85em;
 }
+/*Experience Cards End*/
 
 .hero-contact {
     display: flex;
@@ -345,8 +362,12 @@ nav ul li a:hover {
     padding-top: 10px;
     padding-bottom: 10px;
     margin-bottom: 10vh;
-    font-size: 28px;
+    font-size: 1.3em;
+}
 
+.contact-list a {
+    text-decoration: none;
+    color: #1e6b83;
 }
 
 footer {
@@ -354,7 +375,8 @@ footer {
     align-items: center;
     justify-content: center;
     height: 10vh;
-    margin-bottom: 10vh;
+    margin-bottom: 0;
+    font-size: 0.9em;
 }
 
 /* =============================================
@@ -379,20 +401,20 @@ footer {
     border-radius: 3px;
     transition: transform 0.3s ease, opacity 0.3s ease;
 }
-/* Animate three bars into an X when the menu is open */
 .hamburger.open span:nth-child(1) { transform: translateY(8px) rotate(45deg); }
 .hamburger.open span:nth-child(2) { opacity: 0; }
 .hamburger.open span:nth-child(3) { transform: translateY(-8px) rotate(-45deg); }
 
+/* =============================================
+   DESKTOP ZOOM  (≥ 961px)
+   ============================================= */
 
 /* =============================================
    NARROW WINDOW  (≤ 960px)
-   Triggers on any viewport this wide — desktop,
-   tablet, or phone. Pure screen-size logic.
+   Hamburger replaces nav — fires on any viewport
+   this wide, desktop or phone.
    ============================================= */
-@media (max-width: 1280px) {
-
-    /* --- Hamburger replaces the inline nav --- */
+@media (max-width: 960px) {
     .hamburger {
         display: flex;
     }
@@ -419,39 +441,31 @@ footer {
     nav ul li a {
         font-size: 1.2em;
     }
-
-    /* --- Content scaling --- */
     .hero-container .hero-title {
-        font-size: 4em;
+        font-size: 3.2em;
     }
     .hero-container .hero-description {
-        font-size: 1.4em;
+        font-size: 1.2em;
     }
     .about-window {
-        font-size: 20px;
+        font-size: 18px;
         width: 90%;
     }
     .me-text {
-        font-size: 22px;
+        font-size: 1em;
     }
     .contact-list {
-        font-size: 22px;
+        font-size: 20px;
     }
 }
 
-
 /* =============================================
    SMALL WINDOW  (≤ 650px)
-   Extra scaling for very narrow viewports.
    ============================================= */
 @media (max-width: 650px) {
-
-    /* --- Layout --- */
     .container {
         padding: 0 18px;
     }
-
-    /* --- Hero title & description --- */
     .hero-container {
         margin-top: 14vh;
     }
@@ -459,16 +473,12 @@ footer {
         font-size: 2.4em;
     }
     .hero-container .hero-description {
-        font-size: 1.05em;
+        font-size: 1em;
     }
-
-    /* --- About / terminal window --- */
     .about-window {
         font-size: 14px;
         width: 94%;
     }
-
-    /* --- Me section: stack image below text --- */
     .me-card {
         flex-direction: column;
         gap: 20px;
@@ -476,7 +486,7 @@ footer {
     }
     .me-text {
         width: 100%;
-        font-size: 17px;
+        font-size: 16px;
         margin-right: 0;
     }
     .me-img {
@@ -484,8 +494,9 @@ footer {
         margin-left: 0;
         max-width: 420px;
     }
-
-    /* --- Experience & Project cards --- */
+    .me-img img {
+        height: auto;
+    }
     .experience-card,
     .experience-card ~ .experience-card,
     .project-card {
@@ -505,23 +516,16 @@ footer {
     .project-skills {
         font-size: 0.9em;
     }
-
-    /* --- Section titles --- */
     .section-title {
         font-size: 1.8em;
         margin-top: 7vh;
         margin-bottom: 5vh;
     }
-
-    /* --- Contact --- */
     .contact-list {
         font-size: 16px;
         flex-direction: column;
         gap: 10px;
         text-align: center;
-    }
-    .contact-list p {
-        line-height: 2;     /* more breathing room between the pipe-separated links */
     }
 }
 
