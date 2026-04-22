@@ -417,7 +417,7 @@ footer {
    ============================================= */
 @media (max-width: 1100px) {
     .container {
-        width: 90%;
+        width: 92%;
     }
     .hamburger {
         display: flex;
