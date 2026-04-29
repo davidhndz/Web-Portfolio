@@ -19,6 +19,24 @@ html, body {
 html, body {
     background-color: #f9f6ee;
 }
+.hidden-left {
+    opacity: 0;
+    transform: translateX(-25%);
+    transition: all 1s;
+    transition-delay: 200ms;
+    
+}
+.hidden-right {
+    opacity: 0;
+    transform: translateX(25%);
+    transition: all 1s;
+}
+.show {
+    opacity: 1;
+    filter: blur(0);
+    transform: translateX(0);
+}
+
 .container {
     min-height: 100vh;
     width: 78%;
@@ -97,6 +115,18 @@ nav ul li a:hover {
     margin-bottom: 2vh;
 }
 
+.cursor {
+    color: #1e6b83;
+    animation: blink 1s step-end infinite;
+}
+.cursor:nth-child(1) {
+    color: #f9f6ee;
+}
+@keyframes blink {
+    0%, 100% { opacity: 1; }
+    50%       { opacity: 0; }
+}
+
 .hero-container .hero-description {
     color: grey;
     font-size: 1.3em;
@@ -166,6 +196,20 @@ nav ul li a:hover {
     width: 80%;
     margin: 1.5vh 1.5vh 1.5vh 1.5vh;
     
+}
+
+.about-window p,
+.about-window a,
+.about-window br + p {
+    opacity: 0;
+    transform: translateY(4px);
+    transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+.about-window p.visible,
+.about-window a.visible {
+    opacity: 1;
+    transform: translateY(0);
 }
 
 .section-title {
@@ -255,8 +299,8 @@ nav ul li a:hover {
     box-shadow: 0 4px 10px rgba(0, 0, 0, .15);
 }
 .project-links {
-    font-size: 0.9em;
-    margin-bottom: 1vh;
+    font-size: 1.1em;
+    margin: 1vh;
     align-self: center;
     color: black;
     

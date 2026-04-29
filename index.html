@@ -30,7 +30,7 @@
             
             <div id="home" class="hero-container">
                 <div  class="hero-title">
-                    <p> > David Hernandez</p>
+                    <p>> <span id="typed-name"></span><span class="cursor">▌</span></p>
                 </div>
                 <div class="hero-description">
                     <p>I am a computer science major with interest in <br> 
@@ -45,26 +45,27 @@
                     <div class="about-button yellow"></div>
                     <div class="about-button green"></div>
                 </div>
-                <div class="about-window">
-                <p>> booting david.exe</p>
-                <p>  Initializing profile...</p> <br>
-                <p>> david.location</p>
-                <p>  "Los Angeles, CA"</p> <br>
-                <p>> david.contact</p>
-                <p>  [<a href="mailto:davidhndz1@icloud.com">"davidhndz1@icloud.com"</a>, <a href="https://github.com/davidhndz">"GitHub"</a>, <a href="https://www.linkedin.com/in/davidhndz">"LinkedIn"</a>]</p> <br>
-                <p>> david.resume</p>
-                <a href="files/resume.pdf" download>"resume.pdf"</a> <br>
-                <p>> david.interests</p>
-                <p>  ["cooking", "baking", "soccer",  "skating", "traveling"]</p> <br>
-                <p>> david.education</p>
-                <p>  "B.S Computer Science - California State University Los Angeles"</p> <br>
-                <p>> david.languages</p>
-                <p>  ["python", "c/c++", "java"]</p> <br>
+                <div class="about-window" id="about-window">
+                    <p>> booting david.exe</p>
+                    <p>  Initializing profile...</p> <br>
+                    <p>> david.location</p>
+                    <p>  "Los Angeles, CA"</p> <br>
+                    <p>> david.contact</p>
+                    <p>  [<a href="mailto:davidhndz1@icloud.com">"davidhndz1@icloud.com"</a>, <a href="https://github.com/davidhndz">"GitHub"</a>, <a href="https://www.linkedin.com/in/davidhndz">"LinkedIn"</a>]</p> <br>
+                    <p>> david.resume</p>
+                    <a href="files/resume.pdf" download>"resume.pdf"</a> <br>
+                    <p>> david.interests</p>
+                    <p>  ["cooking", "baking", "soccer",  "skating", "traveling"]</p> <br>
+                    <p>> david.education</p>
+                    <p>  "B.S Computer Science - California State University Los Angeles"</p> <br>
+                    <p>> david.languages</p>
+                    <p>  ["python", "c/c++", "java"]</p> <br>
+                    <p>><span class="cursor"> ▌</span></p>
                 </div>
             </div>
             <h2 id="me" class="section-title">Me</h2>
             <div class="hero-me">
-                <div class="me-card">
+                <div class="me-card hidden-left">
                     <div class="me-text">
                     <p>Hello there, its great to see you.<br>I’m someone who enjoys building things whether that’s technology, community, or a really good meal in the kitchen. My background in construction and tech has shaped how I think: I like solving real problems and creating tools that make life a little more efficient and a little more fair. I’m especially interested in how AI and data can improve industries that don’t always get the spotlight.</p>
                     </div>
@@ -73,7 +74,7 @@
                         <img src="img/me.jpg" alt="A photo of me (David)">
                     </div>
                 </div>
-                <div class="me-card">
+                <div class="me-card hidden-right">
                     <div class="me-text">
                     <p>Outside of work and school, I’m happiest staying active and exploring. I enjoy cooking, traveling to new places, skating when I need to clear my head, and playing soccer whenever I get the chance. I appreciate experiences that challenge me and push me to grow.</p>
                     </div>
@@ -82,7 +83,7 @@
                         <img src="img/skate.jpg" alt="A photo of me skating">
                     </div>
                 </div>
-                <div class="me-card">
+                <div class="me-card hidden-left">
                     <div class="me-text">
                     <p>At the core, I value family, commitment, and curiosity. I believe progress happens when people support each other, share what they know, and aren’t afraid to try something new. I’m always looking to learn, build, and contribute wherever I can.</p>
                     </div>
@@ -94,7 +95,7 @@
             </div>
             <h2 id="experience" class="section-title">Experience</h2>
             <div class="hero-experience">
-                <div class="experience-card">
+                <div class="experience-card hidden-right">
                     <div class="experience-title"><h1><img src="img/HARDLINE-APP-ICON.png" alt="Hardline AI logo">Software Engineer Intern</h1></div>
                     <div class="experience-company">Hardline AI — Santa Monica, CA</div>
                     <div class="experience-date">Oct 2025 – Dec 2025</div>
@@ -115,7 +116,7 @@
                         <span class="exp-badge exp-badge--green">Production Support</span>
                     </div>
                 </div>
-                <div class="experience-card">
+                <div class="experience-card hidden-left">
                     <div class="experience-title"><h1><img src="img/LAUSD_seal.png" alt="LAUSD logo">Special Education Paraprofessional</h1></div>
                     <div class="experience-company">LAUSD — Los Angeles, CA</div>
                     <div class="experience-date">Sep 2024 – Present</div>
@@ -137,7 +138,8 @@
             </div>
             <h2 id="projects" class="section-title">Projects</h2>
             <div class="hero-projects">
-                <div class="project-card">
+
+                <div class="project-card hidden-right">
                     <div class="project-img" style="background-image: url('img/flappybird-project.jpg'); background-size: cover; background-position: center;"></div>
                     <div class="project-content">
                         <div class="project-title"><h1>FlappyBird DQN</h1></div>
@@ -166,7 +168,7 @@
                     </div>
                 </div>
                 
-                <div class="project-card">
+                <div class="project-card hidden-left">
                     <div class="project-img" style="background-image: url('img/sudoku-project.jpg'); background-size: cover; background-position: center;"></div>
                     <div class="project-content">
                         <div class="project-title"><h1>Sudoku-Solver</h1></div>
@@ -188,7 +190,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="project-card">
+                <div class="project-card hidden-right">
                     <div class="project-img" style="background-image: url('img/bookstore-project.jpg'); background-size: cover; background-position: center;"></div>
                     <div class="project-content">
                         <div class="project-title"><h1>BookStore Inventory App</h1></div>
@@ -217,7 +219,7 @@
             <h2 id="contact" class="section-title">Contacts</h2>
             <div class="hero-contact">
                 <div class="contact-list">
-                    <p><a href="mailto:davidhndz1@icloud.com">"davidhndz1@icloud.com"</a> | <a href="https://github.com/davidhndz">"GitHub"</a> | <a href="https://www.linkedin.com/in/davidhndz">"LinkedIn"</a></p>
+                    <p><a href="https://github.com/davidhndz">"GitHub"</a>| <a href="mailto:davidhndz1@icloud.com">"davidhndz1@icloud.com"</a> | <a href="https://www.linkedin.com/in/davidhndz">"LinkedIn"</a></p>
                 </div>
             </div>
             
@@ -244,6 +246,41 @@
                 navLinks.classList.remove('open');
             });
         });
+    </script>
+    <script>
+        const text = 'David Hernandez';
+        const el = document.getElementById('typed-name');
+        let i = 0;
+        function type() {
+            if (i < text.length) {
+                el.textContent += text[i];
+                i++;
+                setTimeout(type, 150)
+            }
+        }
+        type()
+    </script>
+    <script>
+        const lines = document.querySelectorAll(".about-window p, .about-window a");
+        let delay = 300;
+
+        lines.forEach(line => {
+            setTimeout(()=> {
+                line.classList.add("visible");
+            }, delay);
+            delay += 200;
+        })
+    </script>
+    <script>
+        const observer = new IntersectionObserver((entries)=> {
+            entries.forEach((entry)=> {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add("show")
+                }
+            });
+        })
+        const hiddenElement  = document.querySelectorAll(".hidden-left , .hidden-right, .hidden");
+        hiddenElement.forEach((el)=> observer.observe(el))
     </script>
 </body>
 
