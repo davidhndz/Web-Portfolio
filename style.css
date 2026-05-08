@@ -240,7 +240,7 @@ nav ul li a:hover {
     max-width: 1400px;
     margin: 5vh auto;
     border: #1e6b83;
-    border-radius: 20px;
+    border-radius: 10px;
     overflow: hidden;
     transition: transform 0.25s ease, box-shadow 0.25s ease;
 }
@@ -285,11 +285,11 @@ nav ul li a:hover {
     margin-bottom: 1.5vh;
 }
 .badge {
-    background-color: #1e6b83;
+    background-color: rgba(40, 37, 37, 0.783);
     color: #f9f6ee;
     font-size: 0.78em;
     padding: 5px 14px;
-    border-radius: 20px;
+    border-radius: 5px;
     cursor: default;
     transition: filter 0.2s ease, transform 0.2s ease, box-shadow 0.2s ease;
 }
@@ -363,7 +363,7 @@ nav ul li a:hover {
     align-items: center;
     margin: 10px;
     margin-left: 20px;
-    border-radius: 15px;
+    border-radius: 10px;
     transition: transform 0.25s ease, box-shadow 0.25s ease;
 }
 .me-img:hover {
@@ -374,7 +374,7 @@ nav ul li a:hover {
     width: 100%;
     height: 50vh;
     object-fit: cover;   /* fills the box nicely */
-    border-radius: 15px;
+    border-radius: 10px;
 }
 
 /*Experience Cards Start*/
@@ -391,7 +391,7 @@ nav ul li a:hover {
     max-width: 1400px;   /* controls how wide they get */
     margin: 5vh auto;
     padding: 6vh;
-    border-radius: 20px;
+    border-radius: 10px;
     transition: transform 0.25s ease, box-shadow 0.25s ease;
 }
 .experience-card:hover {
@@ -412,7 +412,7 @@ nav ul li a:hover {
     max-width: 1400px;   /* controls how wide they get */
     margin: 5vh auto;
     padding: 6vh;
-    border-radius: 20px;
+    border-radius: 8px;
 }
 .experience-technologies ~ .experience-technologies{
     color: #1b61749a;
@@ -460,7 +460,7 @@ nav ul li a:hover {
 .exp-badge {
     font-size: 0.78em;
     padding: 5px 14px;
-    border-radius: 20px;
+    border-radius: 7px;
     cursor: default;
     transition: filter 0.2s ease, transform 0.2s ease, box-shadow 0.2s ease;
     color: #f9f6ee;
@@ -469,7 +469,7 @@ nav ul li a:hover {
     background-color: rgb(112, 172, 141);
 }
 .exp-badge--teal {
-    background-color: #1b6174;
+    background-color: #2279919a;
 }
 .exp-badge:hover {
     filter: hue-rotate(20deg) brightness(1.1);
